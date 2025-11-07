@@ -1,0 +1,93 @@
+// HALF-PAGE NOVO
+
+.new-halfpage-layout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 600px;
+    background-color: #223926;
+    overflow: hidden;
+
+    .triangle-ornament {
+        filter: #E16B1D;
+        position: absolute;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        height: 80px;
+        // Mudar para 60px para logos com aspect-ratio horizontal
+        max-width: 140px;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        padding: 8px;
+        z-index: 1;
+        box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+        .logo-img {
+            height: 100%;
+            max-width: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+    }
+
+    .creative-text {
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        color: white;
+        max-width: 100%;
+        font-weight: 600;
+        padding: 0 24px;
+        margin: auto;
+    }
+
+    .creative-button {
+        background-color: #3C1914;
+        outline: 2px rgba(255, 255, 255, 0.3) solid;
+        color: white;
+        text-wrap: nowrap;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        width: fit-content;
+        padding: 12px 24px;
+        border-radius: 16px;
+    }
+
+    .creative-img-container {
+        width: 272px;
+        height: 252px;
+        border-radius: 48px 48px 0px 0px;
+        margin-top: auto;
+        backdrop-filter: blur(10px);
+        background-color: #ffffff45;
+        transform: translateY(5px);
+        z-index: 1;
+
+        .creative-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(.96);
+            border-radius: 48px 48px 0px 0px;
+        }
+    }
+
+    .creative-detail {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 160px;
+        background-color: #E16B1D;
+        border-radius: 24px 24px 0px 0px;
+    }
+
+}

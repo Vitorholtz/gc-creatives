@@ -1,0 +1,98 @@
+// BILLBOARD NOVO
+
+.new-billboard-layout {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 970px;
+    height: 250px;
+    background-color: #223926;
+    overflow: hidden;
+
+
+    .creative-detail {
+        position: absolute;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #E16B1D;
+        border-radius: 0px 24px 24px 0px;
+    }
+
+    .creative-img-container {
+        width: 340px;
+        height: 222px;
+        border-radius: 0px 48px 48px 0px;
+        backdrop-filter: blur(10px);
+        background-color: #ffffff45;
+        transform: translateX(-5px);
+        z-index: 1;
+
+        .creative-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(.96);
+            border-radius: 0px 48px 48px 0px;
+        }
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        margin-left: 40px;
+        gap: 24px;
+
+        .creative-text {
+            font-size: 28px;
+            line-height: 38px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .creative-button {
+            background-color: #3C1914;
+            outline: 2px rgba(255, 255, 255, 0.3) solid;
+            color: white;
+            text-wrap: nowrap;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 700;
+            width: fit-content;
+            padding: 12px 24px;
+            border-radius: 16px;
+        }
+    }
+
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        height: 120px;
+        // Mudar para 60px para logos com aspect-ratio horizontal
+        max-width: 180px;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 1;
+        box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+        .logo-img {
+            height: 100%;
+            max-width: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+    }
+
+
+    .triangle-ornament {
+        filter: #E16B1D;
+        position: absolute;
+        right: 0;
+    }
+}
