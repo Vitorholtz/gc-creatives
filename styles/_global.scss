@@ -1,3 +1,6 @@
+@use "colors" as *;
+
+
 //reset
 *,
 *:before,
@@ -34,3 +37,36 @@ button {
     box-shadow: none;
     border-style: none;
 }
+
+// Global Classes
+
+
+// .BannerBG {
+//     background-color: tomato !important;
+// }
+
+// .LogoBG {
+//     background-color: wheat !important;
+// }
+
+// .MainText {
+//     color: floralwhite !important;
+    
+// }
+
+// .ButtonBG {
+//     background-color: brown !important;
+// }
+
+// .ButtonText {
+//     color: seashell !important;
+// }
+
+// .IMGborder {
+//     background-color: rgba(gold, 0.3) !important;
+// }
+
+// .shape {
+//     fill: gold !important;
+
+// }

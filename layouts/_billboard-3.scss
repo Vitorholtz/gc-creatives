@@ -1,0 +1,106 @@
+@use "../styles" as *;
+
+// BILLBOARD 3
+
+.billboard-3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 970px;
+    height: 250px;
+    background-color: $BannerBG;
+    overflow: hidden;
+
+    .creative-img-container {
+        position: relative;
+        width: 360px;
+        height: 250px;
+        z-index: 1;
+
+        
+        .BG-overlap {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 10px;
+            border-radius: 100% 0 0 100%;
+            background-color: $BannerBG;
+        }
+
+        .creative-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
+
+    .bb3-shape1 {
+        position: absolute;
+        fill: $Shape;
+        z-index: 2;
+        left: 35%;
+    }
+
+    .bb3-shape2 {
+        position: absolute;
+        fill: $Shape;
+        z-index: 1;
+        right: 0;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        margin-left: 40px;
+        gap: 24px;
+        z-index: 1;
+
+        .creative-text {
+            font-size: 28px;
+            line-height: 38px;
+            color: $MainText;
+            font-weight: 600;
+        }
+
+        .creative-button {
+            background-color: $ButtonBG;
+            outline: 2px rgba(255, 255, 255, 0.2) solid;
+            color: $ButtonText;
+            text-wrap: nowrap;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 700;
+            width: fit-content;
+            padding: 12px 24px;
+            border-radius: 16px;
+        }
+    }
+
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        height: 120px;
+        // Mudar para 60px para logos com aspect-ratio horizontal
+        max-width: 180px;
+        background: $LogoBG;
+        border-radius: 16px;
+        overflow: hidden;
+        padding: 10px;
+        z-index: 2;
+        box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+
+        .logo-img {
+            height: 100%;
+            max-width: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+    }
+}

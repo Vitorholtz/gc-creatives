@@ -1,17 +1,20 @@
-// HALF-PAGE NOVO
+@use "../styles" as *;
 
-.new-halfpage-layout {
+
+// HALF-PAGE 1
+
+.halfpage-1 {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
     height: 600px;
-    background-color: #223926;
+    background-color: $BannerBG;
     overflow: hidden;
 
-    .triangle-ornament {
-        filter: #E16B1D;
+    .hp1-shape1 {
+        fill: $Shape;
         position: absolute;
     }
 
@@ -23,7 +26,7 @@
         height: 80px;
         // Mudar para 60px para logos com aspect-ratio horizontal
         max-width: 140px;
-        background: #fff;
+        background: $LogoBG;
         border-radius: 12px;
         overflow: hidden;
         padding: 8px;
@@ -42,7 +45,7 @@
         font-size: 26px;
         line-height: 32px;
         text-align: center;
-        color: white;
+        color: $MainText;
         max-width: 100%;
         font-weight: 600;
         padding: 0 24px;
@@ -50,9 +53,9 @@
     }
 
     .creative-button {
-        background-color: #3C1914;
-        outline: 2px rgba(255, 255, 255, 0.3) solid;
-        color: white;
+        background-color: $ButtonBG;
+        outline: 2px rgba(255, 255, 255, 0.2) solid;
+        color: $ButtonText;
         text-wrap: nowrap;
         font-family: Inter;
         font-size: 18px;
@@ -68,26 +71,24 @@
         border-radius: 48px 48px 0px 0px;
         margin-top: auto;
         backdrop-filter: blur(10px);
-        background-color: #ffffff45;
+        background-color: rgba($Shape, 0.3);
         transform: translateY(5px);
+        border: 1px rgba(255, 255, 255, 0.2) solid;
         z-index: 1;
 
         .creative-img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            transform: scale(.96);
             border-radius: 48px 48px 0px 0px;
+            object-fit: cover;
+            transform: scale(.97);
         }
     }
 
-    .creative-detail {
+    .hp1-shape2 {
         position: absolute;
+        fill: $Shape;
         bottom: 0;
-        width: 100%;
-        height: 160px;
-        background-color: #E16B1D;
-        border-radius: 24px 24px 0px 0px;
     }
 
 }
