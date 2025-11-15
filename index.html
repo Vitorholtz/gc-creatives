@@ -33,7 +33,7 @@
                         industry.
                     </p>
                     <button class="ButtonBG ButtonText creative-button">Conheça agora!</button>
-                    <div class="IMGborder creative-img-container">
+                    <div class="creative-img-container">
                         <img src="img/orfeu-img.png" alt="" class="creative-img">
                     </div>
                     <svg class="shape hp1-shape2" width="300" height="160" viewBox="0 0 300 160" fill="none"
@@ -84,7 +84,7 @@
                     <p class="MainText creative-text">Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry.
                     </p>
-                    <div class="IMGborder creative-img-container">
+                    <div class="creative-img-container">
                         <img src="img/orfeu-img.png" alt="" class="creative-img">
                     </div>
                     <button class="ButtonBG ButtonText creative-button">Conheça agora!</button>
@@ -112,7 +112,7 @@
                         <path
                             d="M321.152 0C326.645 4.21546 329.61 8.70482 329.61 13.3652C329.61 37.6658 249.022 57.3652 149.61 57.3652C54.2051 57.3652 -23.8629 39.2212 -30 16.2793C-14.7062 36.2859 60.2299 47.8625 149.418 42.6729C232.593 37.833 301.765 19.9457 321.152 0Z" />
                     </svg>
-                    <div class="IMGborder creative-img-container">
+                    <div class="creative-img-container">
                         <span class="BannerBG BG-overlap"></span>
                         <img src="img/orfeu-img.png" alt="" class="creative-img">
                     </div>
@@ -123,14 +123,14 @@
         <div class="card">
             <section class="creative-container">
                 <div class="BannerBG halfpage-4">
+                    <div class="LogoBG logo-container">
+                        <img src="img/logo-orfeu-sem-fundo.png" alt="" class="logo-img">
+                    </div>
                     <div class="shape-container">
                         <svg class="shape shape-bg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
                             <rect width="100" height="100" />
                         </svg>
-                        <div class="LogoBG logo-container">
-                            <img src="img/logo-orfeu-sem-fundo.png" alt="" class="logo-img">
-                        </div>
-                        <div class="IMGborder creative-img-container">
+                        <div class="creative-img-container">
                             <img src="img/orfeu-img.png" alt="" class="creative-img">
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                         <path d="M0 0H184C192.837 0 200 7.16345 200 16V234C200 242.837 192.837 250 184 250H0V0Z" />
                     </svg>
 
-                    <div class="IMGborder creative-img-container">
+                    <div class="creative-img-container">
                         <img src="img/orfeu-img.png" alt="" class="creative-img">
                     </div>
                     <div class="text-container">
@@ -223,7 +223,7 @@
                     <div class="LogoBG logo-container">
                         <img src="img/logo-orfeu-sem-fundo.png" alt="" class="logo-img">
                     </div>
-                    <div class="IMGborder creative-img-container">
+                    <div class="creative-img-container">
                         <img src="img/orfeu-img.png" alt="" class="creative-img">
                     </div>
                     <div class="text-container">
@@ -240,7 +240,7 @@
         <div class="card">
             <section class="creative-container">
                 <div class="BannerBG billboard-3">
-                    <div class="IMGborder creative-img-container">
+                    <div class="creative-img-container">
                         <span class="BannerBG BG-overlap"></span>
                         <img src="img/orfeu-img.png" alt="" class="creative-img">
                     </div>
@@ -279,7 +279,7 @@
                         <div class="LogoBG logo-container">
                             <img src="img/logo-orfeu-sem-fundo.png" alt="" class="logo-img">
                         </div>
-                        <div class="IMGborder creative-img-container">
+                        <div class="creative-img-container">
                             <img src="img/orfeu-img.png" alt="" class="creative-img">
                         </div>
                     </div>
@@ -292,41 +292,8 @@
                 </div>
             </section>
         </div>
-
     </div>
-
-
-
-    <script>
-        function applyScaleToAll(scaleValue) {
-            const layouts = document.querySelectorAll('.halfpage-1, .halfpage-2, .halfpage-3, .billboard-1, .billboard-2, .billboard-3');
-
-            layouts.forEach(layout => {
-                const container = layout.closest('.creative-container');
-                if (!container) return;
-
-                // Garante posicionamento correto
-                container.style.position = 'relative';
-                layout.style.position = 'absolute';
-                layout.style.left = '50%';
-                layout.style.top = '50%';
-                layout.style.transformOrigin = 'center center';
-                layout.style.transform = `translate(-50%, -50%) scale(${scaleValue})`;
-
-                // Descobre as dimensões reais automaticamente
-                const rect = layout.getBoundingClientRect();
-                const scaledWidth = rect.width;
-                const scaledHeight = rect.height;
-
-                // Ajusta o container para acompanhar o tamanho visível
-                container.style.width = `${scaledWidth}px`;
-                container.style.height = `${scaledHeight}px`;
-            });
-        }
-
-        // Aplica um scale inicial
-        applyScaleToAll(1);
-    </script>
+    
+    <script src="script.js"></script>
 </body>
-
 </html>

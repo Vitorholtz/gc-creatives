@@ -13,6 +13,10 @@
     background-color: $BannerBG;
     overflow: hidden;
 
+    .shape {
+        animation: BlurredDrop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
+    }
+
     .hp3-shape1 {
         position: absolute;
         fill: $Shape;
@@ -38,8 +42,9 @@
         border-radius: 12px;
         overflow: hidden;
         padding: 8px;
-        z-index: 1;
+        z-index: 2;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+        animation: Logo 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
 
         .logo-img {
             height: 100%;
@@ -58,11 +63,12 @@
         font-weight: 600;
         padding: 0 24px;
         margin: auto;
+        animation: Appear 1s 2s backwards ease-in-out;
     }
 
     .creative-button {
         background-color: $ButtonBG;
-        outline: 2px rgba(255, 255, 255, 0.2) solid;
+        border: 1px rgba(255, 255, 255, 0.2) solid;
         color: $ButtonText;
         text-wrap: nowrap;
         font-family: Inter;
@@ -71,7 +77,9 @@
         width: fit-content;
         padding: 12px 24px;
         border-radius: 16px;
-        z-index: 3;
+        z-index: 1;
+        animation: FromBottom 1s 2s backwards ease-in-out,
+            bounce 1s 4s ease;
     }
 
     .creative-img-container {
@@ -80,6 +88,7 @@
         height: 258px;
         margin-top: auto;
         z-index: 1;
+        animation: BlurredDrop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
 
         .BG-overlap {
             position: absolute;
