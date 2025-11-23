@@ -1,20 +1,20 @@
 @use "../styles" as *;
 
-// BILLBOARD 3
+// MAXIBOARD 3
 
-.billboard-3 {
+.maxiboard-3 {
     position: relative;
     display: flex;
     align-items: center;
     width: 970px;
-    height: 250px;
+    height: 150px;
     background-color: $BannerBG;
     overflow: hidden;
 
     .creative-img-container {
         position: relative;
-        width: 360px;
-        height: 250px;
+        width: 218px;
+        height: 150px;
         z-index: 1;
         animation: BlurredDrop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
 
@@ -43,14 +43,14 @@
     }
 
 
-    .bb3-shape1 {
+    .mb3-shape1 {
         position: absolute;
         fill: $Shape;
         z-index: 2;
-        left: 35%;
+        left: 21%;
     }
 
-    .bb3-shape2 {
+    .mb3-shape2 {
         position: absolute;
         fill: $Shape;
         z-index: 1;
@@ -59,15 +59,16 @@
 
     .text-container {
         display: flex;
-        flex-direction: column;
-        max-width: 360px;
-        margin-left: 32px;
-        gap: 24px;
+        align-items: center;
+        max-width: 508px;
+        margin: auto;
+        gap: 16px;
         z-index: 1;
 
         .creative-text {
-            font-size: 28px;
-            line-height: 38px;
+            font-size: 24px;
+            line-height: 36px;
+            min-width: 320px;
             color: $MainText;
             font-weight: 600;
             animation: Appear 1s 2s backwards ease-in-out;
@@ -79,7 +80,7 @@
             color: $ButtonText;
             text-wrap: nowrap;
             font-family: Inter;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             width: fit-content;
             padding: 12px 24px;
@@ -92,9 +93,9 @@
 
     .logo-container {
         margin: auto;
-        height: 120px;
+        height: 84px;
         // Mudar para 60px para logos com aspect-ratio horizontal
-        max-width: 180px;
+        max-width: 140px;
         background: $LogoBG;
         border-radius: 16px;
         overflow: hidden;

@@ -16,6 +16,7 @@
         position: absolute;
         fill: $Shape;
         left: 0;
+        animation: FromLeft 1s 2s backwards ease-in-out;
     }
 
     .creative-img-container {
@@ -27,6 +28,7 @@
         overflow: hidden;
         transform: translateX(-6px);
         z-index: 1;
+        animation: FromLeft 1s 1s backwards ease-in-out;
 
         .creative-img {
             width: 100%;
@@ -47,6 +49,7 @@
             line-height: 38px;
             color: $MainText;
             font-weight: 600;
+            animation: Appear 1s 2s backwards ease-in-out;
         }
 
         .creative-button {
@@ -60,14 +63,13 @@
             width: fit-content;
             padding: 12px 24px;
             border-radius: 16px;
+            animation: FromBottom 1s 3s backwards ease-in-out,
+                bounce 1s 4s ease;
         }
     }
 
 
     .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: auto;
         height: 120px;
         // Mudar para 60px para logos com aspect-ratio horizontal
@@ -78,6 +80,8 @@
         padding: 10px;
         z-index: 1;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+        animation: LogoToRight 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
+
 
         .logo-img {
             height: 100%;
@@ -92,5 +96,6 @@
         position: absolute;
         fill: $Shape;
         right: 0;
+        animation: FromRight 1s 1s backwards ease-in-out;
     }
 }

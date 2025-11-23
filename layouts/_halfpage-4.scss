@@ -15,9 +15,6 @@
 
     .logo-container {
         position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 80px;
         // Mudar para 60px para logos com aspect-ratio horizontal
         max-width: 140px;
@@ -27,7 +24,7 @@
         padding: 8px;
         z-index: 2;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-        animation: Logo 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
+        animation: FromTop 1.5s 1s backwards cubic-bezier(.74, -0.22, .89, .91);
 
         .logo-img {
             height: 100%;
@@ -46,7 +43,7 @@
         border-radius: 0 0 32px 32px;
         width: 100%;
         overflow: hidden;
-        animation: FromTop 1s 1s backwards ease-in-out;
+        animation: FromTop 1s 0s backwards ease-in-out;
 
         .shape-bg {
             position: absolute;
@@ -82,11 +79,10 @@
         line-height: 32px;
         text-align: center;
         color: $MainText;
-        max-width: 100%;
         font-weight: 600;
         padding: 0 24px;
         margin: auto;
-        animation: Appear 1s 2s backwards ease-in-out;
+        animation: Appear 1s 1s backwards ease-in-out;
     }
 
     .creative-button {

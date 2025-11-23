@@ -1,14 +1,13 @@
 @use "../styles" as *;
 
-// HALF-PAGE 2
+// MAXIBOARD 2
 
-.halfpage-2 {
+.maxiboard-2 {
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 300px;
-    height: 600px;
+    width: 970px;
+    height: 150px;
     background-color: $BannerBG;
     overflow: hidden;
 
@@ -16,60 +15,63 @@
         animation: BlurredDrop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
     }
 
-    .hp2-shape1 {
+    .mb2-shape1 {
         position: absolute;
         fill: $Shape;
         left: 0;
+        top: 0;
     }
 
-    .hp2-shape2 {
+    .mb2-shape2 {
         position: absolute;
         fill: $Shape;
-        right: 0;
+        left: 7%;
+        bottom: 0;
     }
 
-    .hp2-shape3 {
+    .mb2-shape3 {
         position: absolute;
         fill: $Shape;
-        left: 0;
-        top: 45%;
-    }
-
-    .hp2-shape4 {
-        position: absolute;
-        fill: $Shape;
-        right: 4%;
-        top: 52%;
+        top: 12%;
+        left: 36%;
         z-index: 2;
+
     }
 
-    .hp2-shape5 {
+    .mb2-shape4 {
         position: absolute;
         fill: $Shape;
-        left: 0;
+        top: 0;
+        right: 16%;
+        
+    }
+
+    .mb2-shape5 {
+        position: absolute;
+        fill: $Shape;
         bottom: 0;
+        right: 20%;
     }
 
-    .hp2-shape6 {
+    .mb2-shape6 {
         position: absolute;
         fill: $Shape;
+        bottom: 0;
         right: 0;
-        bottom: 0;
     }
-
 
     .logo-container {
-        margin-top: 24px;
-        height: 80px;
+        margin: auto;
+        height: 84px;
         // Mudar para 60px para logos com aspect-ratio horizontal
         max-width: 140px;
         background: $LogoBG;
-        border-radius: 12px;
+        border-radius: 16px;
         overflow: hidden;
-        padding: 8px;
+        padding: 10px;
         z-index: 1;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-        animation: LogoToTop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
+        animation: LogoToLeft 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
 
         .logo-img {
             height: 100%;
@@ -79,26 +81,13 @@
         }
     }
 
-    .creative-text {
-        font-size: 26px;
-        line-height: 32px;
-        text-align: center;
-        color: $MainText;
-        font-weight: 600;
-        padding: 0 24px;
-        margin: auto;
-        animation: Appear 1s 2s backwards ease-in-out;
-    }
-
     .creative-img-container {
-        width: 286px;
-        height: 202px;
-        margin: 0px auto 28px auto;
+        width: 218px;
+        height: 138px;
         border-radius: 900px;
         backdrop-filter: blur(10px);
-        border: 6px #ffffff40 solid;
+        border: 4px #ffffff40 solid;
         overflow: hidden;
-        z-index: 1;
         animation: FromBottom 1s 1s backwards ease-in-out;
 
         .creative-img {
@@ -108,20 +97,36 @@
         }
     }
 
-    .creative-button {
-        background-color: $ButtonBG;
-        border: 1px rgba(255, 255, 255, 0.2) solid;
-        color: $ButtonText;
-        text-wrap: nowrap;
-        font-family: Inter;
-        font-size: 18px;
-        font-weight: 700;
-        width: fit-content;
-        padding: 12px 24px;
-        border-radius: 16px;
-        margin: 0px auto 36px auto;
-        animation: FromBottom 1s 2s backwards ease-in-out,
-            bounce 1s 4s ease;
-    }
+    .text-container {
+        display: flex;
+        align-items: center;
+        max-width: 508px;
+        margin: auto;
+        gap: 16px;
 
+        .creative-text {
+            font-size: 24px;
+            line-height: 36px;
+            min-width: 320px;
+            color: $MainText;
+            font-weight: 600;
+            animation: Appear 1s 2s backwards ease-in-out;
+        }
+
+        .creative-button {
+            background-color: $ButtonBG;
+            border: 1px rgba(255, 255, 255, 0.2) solid;
+            color: $ButtonText;
+            text-wrap: nowrap;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 700;
+            width: fit-content;
+            padding: 12px 24px;
+            border-radius: 16px;
+            z-index: 1;
+            animation: FromBottom 1s 2s backwards ease-in-out,
+                bounce 1s 4s ease;
+        }
+    }
 }

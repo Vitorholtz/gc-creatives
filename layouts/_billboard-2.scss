@@ -11,6 +11,10 @@
     background-color: $BannerBG;
     overflow: hidden;
 
+    .shape {
+        animation: BlurredDrop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
+    }
+
     .bb2-shape1 {
         position: absolute;
         fill: $Shape;
@@ -56,9 +60,6 @@
     }
 
     .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: auto;
         height: 120px;
         // Mudar para 60px para logos com aspect-ratio horizontal
@@ -69,6 +70,7 @@
         padding: 10px;
         z-index: 1;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+        animation: LogoToLeft 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
 
         .logo-img {
             height: 100%;
@@ -85,6 +87,7 @@
         backdrop-filter: blur(10px);
         border: 6px #ffffff40 solid;
         overflow: hidden;
+        animation: FromBottom 1s 1s backwards ease-in-out;
 
         .creative-img {
             width: 100%;
@@ -107,6 +110,7 @@
             color: $MainText;
             text-align: center;
             font-weight: 600;
+            animation: Appear 1s 2s backwards ease-in-out;
         }
 
         .creative-button {
@@ -121,6 +125,8 @@
             padding: 12px 24px;
             border-radius: 16px;
             z-index: 1;
+            animation: FromBottom 1s 2s backwards ease-in-out,
+                bounce 1s 4s ease;
         }
     }
 }
