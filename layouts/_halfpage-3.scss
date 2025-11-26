@@ -7,7 +7,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 300px;
     height: 600px;
     background-color: $BannerBG;
@@ -31,8 +30,13 @@
     }
 
     .logo-container {
-        margin-top: 24px;
+        position: relative;
+        transform: translate(-50%, 0%);
+        top: 0;
+        left: 50%;
+        margin-top: 20px;
         height: 80px;
+        width: fit-content;
         // Mudar para 60px para logos com aspect-ratio horizontal
         max-width: 140px;
         background: $LogoBG;
@@ -71,6 +75,7 @@
         font-size: 18px;
         font-weight: 700;
         width: fit-content;
+        margin: 0 auto 0 auto;
         padding: 12px 24px;
         border-radius: 16px;
         z-index: 1;

@@ -1,12 +1,12 @@
 @use "../styles" as *;
 
-// BILLBOARD 4
+// MAXIBOARD 4
 
-.billboard-4 {
+.maxiboard-4 {
     position: relative;
     display: flex;
     width: 970px;
-    height: 250px;
+    height: 150px;
     background-color: $BannerBG;
     overflow: hidden;
 
@@ -16,7 +16,7 @@
         align-items: center;
         gap: 32px;
         padding: 0 8px 0 32px;
-        border-radius: 0 32px 32px 0;
+        border-radius: 0 24px 24px 0;
         height: 100%;
         overflow: hidden;
         animation: FromLeft 1s 0s backwards ease-in-out;
@@ -32,9 +32,9 @@
 
         .logo-container {
             margin: auto;
-            height: 120px;
+            height: 84px;
             // Mudar para 60px para logos com aspect-ratio horizontal
-            max-width: 180px;
+            max-width: 140px;
             background: $LogoBG;
             border-radius: 16px;
             overflow: hidden;
@@ -52,10 +52,10 @@
         }
 
         .creative-img-container {
-            width: 340px;
-            height: 230px;
-            border-radius: 24px;
-            border: 6px #ffffff40 solid;
+            width: 200px;
+            height: 136px;
+            border-radius: 16px;
+            border: 4px #ffffff40 solid;
             overflow: hidden;
             z-index: 1;
 
@@ -71,16 +71,14 @@
     .text-container {
         display: flex;
         align-items: center;
-        flex-direction: column;
         margin: auto;
-        max-width: 360px;
         gap: 24px;
 
         .creative-text {
-            font-size: 28px;
-            line-height: 38px;
+            font-size: 24px;
+            line-height: 36px;
+            width: 320px;
             color: $MainText;
-            text-align: center;
             font-weight: 600;
             animation: Appear 1s 1s backwards ease-in-out;
         }
@@ -91,7 +89,7 @@
             color: $ButtonText;
             text-wrap: nowrap;
             font-family: Inter;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             width: fit-content;
             padding: 12px 24px;

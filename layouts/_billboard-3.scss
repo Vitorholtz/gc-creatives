@@ -5,7 +5,6 @@
 .billboard-3 {
     position: relative;
     display: flex;
-    align-items: center;
     width: 970px;
     height: 250px;
     background-color: $BannerBG;
@@ -15,6 +14,7 @@
         position: relative;
         width: 360px;
         height: 250px;
+        margin: auto auto auto 0;
         z-index: 1;
         animation: BlurredDrop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
 
@@ -60,8 +60,8 @@
     .text-container {
         display: flex;
         flex-direction: column;
+        margin: auto 0 auto 0;
         max-width: 360px;
-        margin-left: 32px;
         gap: 24px;
         z-index: 1;
 
@@ -91,7 +91,11 @@
 
 
     .logo-container {
-        margin: auto;
+        position: relative;
+        transform: translate(0%, -50%);
+        top: 50%;
+        left: 0;
+        margin: 0 auto 0 auto;
         height: 120px;
         // Mudar para 60px para logos com aspect-ratio horizontal
         max-width: 180px;

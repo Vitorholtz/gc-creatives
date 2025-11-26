@@ -7,7 +7,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 300px;
     height: 600px;
     background-color: $BannerBG;
@@ -20,17 +19,22 @@
     }
 
     .logo-container {
-        margin-top: 24px;
+        position: relative;
+        transform: translate(-50%, 0%);
+        top: 0;
+        left: 50%;
+        margin-top: 20px;
         height: 80px;
+        width: fit-content;
         // Mudar para 60px para logos com aspect-ratio horizontal
         max-width: 140px;
         background: $LogoBG;
         border-radius: 12px;
         overflow: hidden;
         padding: 8px;
-        z-index: 1;
+        z-index: 2;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-        animation: LogoToTop 1.5s backwards cubic-bezier(.74,-0.22,.89,.91);
+        animation: LogoToTop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
 
         .logo-img {
             height: 100%;
@@ -48,7 +52,7 @@
         font-weight: 600;
         padding: 0 24px;
         margin: auto;
-        animation: Appear 1s 2s backwards ease-in-out; 
+        animation: Appear 1s 2s backwards ease-in-out;
     }
 
     .creative-button {
@@ -62,16 +66,18 @@
         width: fit-content;
         padding: 12px 24px;
         border-radius: 16px;
+        margin: 0 auto 0 auto;
         animation: FromBottom 1s 2s backwards ease-in-out,
-                   bounce 1s 4s ease;
-        
+            bounce 1s 4s ease;
     }
+
+
 
     .creative-img-container {
         width: 272px;
         height: 252px;
+        margin: auto auto 0 auto;
         border-radius: 48px 48px 0px 0px;
-        margin-top: auto;
         backdrop-filter: blur(10px);
         transform: translateY(5px);
         border: 6px #ffffff40 solid;

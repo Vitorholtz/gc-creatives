@@ -1,17 +1,17 @@
 @use "../styles" as *;
 
-// MAXIBOARD 1
+// SUPER LEADERBOARD 1
 
-.maxiboard-1 {
+.superleaderboard-1 {
     position: relative;
     display: flex;
     width: 970px;
-    height: 150px;
+    height: 90px;
     background-color: $BannerBG;
     overflow: hidden;
 
 
-    .mb1-shape1 {
+    .sl1-shape1 {
         position: absolute;
         fill: $Shape;
         left: 0;
@@ -19,14 +19,14 @@
     }
 
     .creative-img-container {
-        width: 208px;
-        height: 136px;
+        width: 128px;
+        height: 80px;
         margin: auto auto auto 0;
-        border-radius: 0px 32px 32px 0px;
+        border-radius: 0px 16px 16px 0px;
         backdrop-filter: blur(10px);
-        border: 4px #ffffff40 solid;
+        border: 2px #ffffff40 solid;
         overflow: hidden;
-        transform: translateX(-4px);
+        transform: translateX(-2px);
         z-index: 1;
         animation: FromLeft 1s 1s backwards ease-in-out;
 
@@ -40,14 +40,14 @@
     .text-container {
         display: flex;
         align-items: center;
-        max-width: 508px;
+        max-width: 600px;
         margin: auto 0 auto 0;
         gap: 16px;
 
         .creative-text {
-            font-size: 24px;
-            line-height: 36px;
-            min-width: 320px;
+            font-size: 20px;
+            line-height: 32px;
+            min-width: 400px;
             color: $MainText;
             font-weight: 600;
             animation: Appear 1s 2s backwards ease-in-out;
@@ -76,13 +76,13 @@
         top: 50%;
         left: 0;
         margin: 0 auto 0 auto;
-        height: 84px;
+        height: 68px;
         // Mudar para 60px para logos com aspect-ratio horizontal
-        max-width: 140px;
+        max-width: 120px;
         background: $LogoBG;
-        border-radius: 16px;
+        border-radius: 12px;
         overflow: hidden;
-        padding: 10px;
+        padding: 6px;
         z-index: 1;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
         animation: LogoToRight 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
@@ -97,7 +97,7 @@
     }
 
 
-    .mb1-shape2 {
+    .sl1-shape2 {
         position: absolute;
         fill: $Shape;
         right: 0;

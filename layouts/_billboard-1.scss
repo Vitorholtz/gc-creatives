@@ -5,7 +5,6 @@
 .billboard-1 {
     position: relative;
     display: flex;
-    align-items: center;
     width: 970px;
     height: 250px;
     background-color: $BannerBG;
@@ -22,6 +21,7 @@
     .creative-img-container {
         width: 340px;
         height: 222px;
+        margin: auto auto auto 0;
         border-radius: 0px 48px 48px 0px;
         backdrop-filter: blur(10px);
         border: 6px #ffffff40 solid;
@@ -41,7 +41,7 @@
         display: flex;
         flex-direction: column;
         max-width: 360px;
-        margin-left: 40px;
+        margin: auto 0 auto 0;
         gap: 24px;
 
         .creative-text {
@@ -70,7 +70,11 @@
 
 
     .logo-container {
-        margin: auto;
+        position: relative;
+        transform: translate(0%, -50%);
+        top: 50%;
+        left: 0;
+        margin: 0 auto 0 auto;
         height: 120px;
         // Mudar para 60px para logos com aspect-ratio horizontal
         max-width: 180px;

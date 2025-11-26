@@ -1,5 +1,5 @@
         function applyScaleToAll(scaleValue) {
-            const layouts = document.querySelectorAll('.halfpage-1, .halfpage-2, .halfpage-3, .halfpage-4, .billboard-1, .billboard-2, .billboard-3, .billboard-4');
+            const layouts = document.querySelectorAll('.billboard-1, .billboard-2, .billboard-3, .billboard-4, .halfpage-1, .halfpage-2, .halfpage-3, .halfpage-4, .maxiboard-1, .maxiboard-2, .maxiboard-3, .maxiboard-4, .superleaderboard-1, .superleaderboard-2, .superleaderboard-3, .superleaderboard-4');
 
             layouts.forEach(layout => {
                 const container = layout.closest('.creative-container');

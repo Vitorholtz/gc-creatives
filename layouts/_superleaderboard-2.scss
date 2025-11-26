@@ -1,12 +1,12 @@
 @use "../styles" as *;
 
-// MAXIBOARD 2
+// SUPER LEADERBBOARD 2
 
-.maxiboard-2 {
+.superleaderboard-2 {
     position: relative;
     display: flex;
     width: 970px;
-    height: 150px;
+    height: 90px;
     background-color: $BannerBG;
     overflow: hidden;
 
@@ -14,45 +14,45 @@
         animation: BlurredDrop 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
     }
 
-    .mb2-shape1 {
+    .sl2-shape1 {
         position: absolute;
         fill: $Shape;
         left: 0;
         top: 0;
     }
 
-    .mb2-shape2 {
+    .sl2-shape2 {
         position: absolute;
         fill: $Shape;
-        left: 7%;
+        left: 5%;
         bottom: 0;
     }
 
-    .mb2-shape3 {
+    .sl2-shape3 {
         position: absolute;
         fill: $Shape;
         top: 12%;
-        left: 36%;
+        left: 30%;
         z-index: 2;
 
     }
 
-    .mb2-shape4 {
+    .sl2-shape4 {
         position: absolute;
         fill: $Shape;
         top: 0;
-        right: 16%;
+        right: 13%;
         
     }
 
-    .mb2-shape5 {
+    .sl2-shape5 {
         position: absolute;
         fill: $Shape;
         bottom: 0;
         right: 20%;
     }
 
-    .mb2-shape6 {
+    .sl2-shape6 {
         position: absolute;
         fill: $Shape;
         bottom: 0;
@@ -65,13 +65,13 @@
         top: 50%;
         left: 0;
         margin: 0 auto 0 auto;
-        height: 84px;
+        height: 68px;
         // Mudar para 60px para logos com aspect-ratio horizontal
-        max-width: 140px;
+        max-width: 120px;
         background: $LogoBG;
-        border-radius: 16px;
+        border-radius: 12px;
         overflow: hidden;
-        padding: 10px;
+        padding: 6px;
         z-index: 1;
         box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
         animation: LogoToLeft 1.5s backwards cubic-bezier(.74, -0.22, .89, .91);
@@ -85,12 +85,12 @@
     }
 
     .creative-img-container {
-        width: 218px;
-        height: 138px;
+        width: 132px;
+        height: 82px;
         margin: auto 0 auto 0;
         border-radius: 900px;
         backdrop-filter: blur(10px);
-        border: 4px #ffffff40 solid;
+        border: 2px #ffffff40 solid;
         overflow: hidden;
         animation: FromBottom 1s 1s backwards ease-in-out;
 
@@ -104,14 +104,14 @@
     .text-container {
         display: flex;
         align-items: center;
-        max-width: 508px;
+        max-width: 600px;
         margin: auto;
         gap: 16px;
 
         .creative-text {
-            font-size: 24px;
-            line-height: 36px;
-            min-width: 320px;
+            font-size: 20px;
+            line-height: 32px;
+            min-width: 400px;
             color: $MainText;
             font-weight: 600;
             animation: Appear 1s 2s backwards ease-in-out;
